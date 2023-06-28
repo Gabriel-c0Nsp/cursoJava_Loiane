@@ -12,36 +12,68 @@ public class Decrescente {
     double numero2 = sc.nextDouble();
     double numero3 = sc.nextDouble();
 
-    if (numero1 > numero2 && numero1 > numero3 && numero2 > numero3) {
+    System.out.println();
+
+    if (numero1 > numero2 && numero1 > numero3 && numero2 > numero3 || numero1 > numero2 && numero1 > numero3 && numero2 == numero3) {
       System.out.println(numero1);
       System.out.println(numero2);
       System.out.println(numero3);
     } 
-    else if (numero1 > numero2 && numero1 > numero3 && numero3 > numero2) {
+    else if (numero1 > numero2 && numero1 > numero3 && numero3 > numero2 || numero1 > numero2 && numero1 > numero3 && numero3 == numero2) {
       System.out.println(numero1);
       System.out.println(numero3);
       System.out.println(numero2);
     } 
-    else if (numero2 > numero1 && numero2 > numero3 && numero1 > numero3) {
+    else if (numero1 == numero2 && numero1 > numero3) {
+      System.out.println(numero1);
+      System.out.println(numero2);
+      System.out.println(numero3);
+    }
+    else if (numero1 == numero3 && numero1 > numero2) {
+      System.out.println(numero1);
+      System.out.println(numero3);
+      System.out.println(numero2);
+    }
+    else if (numero2 > numero1 && numero2 > numero3 && numero1 > numero3  || numero2 > numero1 && numero2 > numero3 && numero1 == numero3) {
       System.out.println(numero2);
       System.out.println(numero1);
       System.out.println(numero3);
     } 
-    else if (numero2 > numero1 && numero2 > numero3 && numero3 > numero1) {
+    else if (numero2 > numero1 && numero2 > numero3 && numero3 > numero1 || numero2 > numero1 && numero2 > numero3 && numero3 == numero1) {
       System.out.println(numero2);
       System.out.println(numero3);
       System.out.println(numero1);
     } 
-    else if (numero3 > numero1 && numero3 > numero2 && numero2 > numero1) {
+    else if (numero2 == numero1 && numero2 > numero3) {
+      System.out.println(numero2);
+      System.out.println(numero1);
+      System.out.println(numero3);
+    }
+    else if (numero2 == numero3 && numero2 > numero1) {
+      System.out.println(numero2);
+      System.out.println(numero3);
+      System.out.println(numero1);
+    }
+    else if (numero3 > numero1 && numero3 > numero2 && numero2 > numero1 || numero3 > numero1 && numero3 > numero2 && numero2 == numero1) {
       System.out.println(numero3);
       System.out.println(numero2);
       System.out.println(numero1);
     } 
-    else if (numero3 > numero1 && numero3 > numero2 && numero1 > numero2) {
+    else if (numero3 > numero1 && numero3 > numero2 && numero1 > numero2 || numero3 > numero1 && numero3 > numero2 && numero1 == numero2 ) {
       System.out.println(numero3);
       System.out.println(numero1);
       System.out.println(numero2);
     } 
+    else if (numero3 == numero2 && numero3 > numero1) {
+      System.out.println(numero3);
+      System.out.println(numero2);
+      System.out.println(numero1);
+    }
+    else if (numero3 == numero1 && numero3 > numero2) {
+      System.out.println(numero3);
+      System.out.println(numero1);
+      System.out.println(numero2);
+    }
     else {
       System.out.println("Os números digitados são iguais");
     }
