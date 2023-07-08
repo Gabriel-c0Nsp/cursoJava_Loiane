@@ -21,9 +21,7 @@ public class Questao32 {
     }
       System.out.print(" = " + resultado);
 
-    // System.out.println("O resultado de " + numero + "! é igual a " + resultado);
-
-
     scanner.close();
+
   }
 }
