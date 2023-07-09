@@ -32,7 +32,7 @@ public class Questao27 {
             recalcular = true;
           }
           else {
-          recalcular = false;
+            recalcular = false;
           }
       }
       else if (mediaDeAlunosPorTurma <= 40) {

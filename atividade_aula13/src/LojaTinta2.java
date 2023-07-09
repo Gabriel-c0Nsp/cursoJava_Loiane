@@ -27,7 +27,7 @@ public class LojaTinta2 {
 
     double galoesUsadosPequenos = litrosUsados / galoesTintaPequeno;
     double galoesUsadosValorArredondadoGaloesPequenos= Math.ceil(galoesUsadosPequenos);
-    double precoTotalGaloesPequenos= galoesUsadosValorArredondadoGaloesPequenos * precoGaloesTintaPequeno;
+    double precoTotalGaloesPequenos = galoesUsadosValorArredondadoGaloesPequenos * precoGaloesTintaPequeno;
 
 
     System.out.printf("A quantidade de latas de 18 litros a serem compradas será de: %.0f%n", latasUsadasValorArredondadoLatasGrandes);
