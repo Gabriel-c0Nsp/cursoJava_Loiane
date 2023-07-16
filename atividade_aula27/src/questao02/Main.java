@@ -7,12 +7,12 @@ public class Main {
 
     ContaCorrente contaCliente = new ContaCorrente();
 
-    //simulando um banco de dados
+    // simulando um banco de dados
     contaCliente.numeroConta = 98987237519L;
-    contaCliente.saldo = 12000; 
+    contaCliente.saldo = 12000;
     contaCliente.statusEspecial = true;
     contaCliente.limite = 20000;
-   
+
     Scanner scanner = new Scanner(System.in);
 
     Long numeroConta;

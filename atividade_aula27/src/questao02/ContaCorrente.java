@@ -16,12 +16,10 @@ public class ContaCorrente {
     if (numeroConta == 98987237519L) {
       contaExiste = true;
       System.out.println("Seja bem vindo! Muito bom te ver de novo.");
-    }
-    else if (numeroConta == 98985041081L) {
+    } else if (numeroConta == 98985041081L) {
       contaExiste = true;
       System.out.println("Seja bem vindo! Muito bom te ver de novo.");
-    }
-    else {
+    } else {
       contaExiste = false;
       System.out.println("Essa conta não existe");
     }
@@ -34,7 +32,7 @@ public class ContaCorrente {
     }
   }
 
-  void calcularSaqueOuDeposito (int escolha) {
+  void calcularSaqueOuDeposito(int escolha) {
     double answer = 0;
     if (escolha == 0) {
       System.out.println("Este é o seu saldo atual: " + saldo);
@@ -42,14 +40,12 @@ public class ContaCorrente {
       double saque = scanner.nextDouble();
       answer = saldo - saque;
       System.out.print("Saldo atual: " + answer);
-    }
-    else if (escolha == 1) {
+    } else if (escolha == 1) {
       System.out.println("Este é o seu saldo atual: " + saldo);
       System.out.print("Insira o valor que deseja depositar na sua conta: ");
-      double deposito = scanner.nextDouble(); 
+      double deposito = scanner.nextDouble();
       answer = saldo + deposito;
       System.out.print("Saldo atual: " + answer);
     }
-  } 
+  }
 }
-
