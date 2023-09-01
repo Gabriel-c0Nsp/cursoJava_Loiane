@@ -1,4 +1,4 @@
 public interface DimensaoVolumetrica {
     
-    void calcularVolume();
+    double calcularVolume();
 }

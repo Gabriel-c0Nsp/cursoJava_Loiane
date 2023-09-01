@@ -1,4 +1,4 @@
 public interface DimensaoSuperficial {
     
-    void calcularArea();
+    double calcularArea();
 }
