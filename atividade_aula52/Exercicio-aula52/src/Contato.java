@@ -29,11 +29,11 @@ public class Contato {
     this.identificador = identificador;
   }
 
-  // @Override 
-  // public String toString() {
-  //   return "Nome: " + nome + "\n" +
-  //          "Telefone: " + telefone + "\n" + 
-  //          "Nº do contato na agenda: " + identificador;
-  // }
+  @Override 
+  public String toString() {
+    return "Nome: " + nome + "\n" +
+           "Telefone: " + telefone + "\n" + 
+           "Nº do contato na agenda: " + identificador;
+  }
 
 }

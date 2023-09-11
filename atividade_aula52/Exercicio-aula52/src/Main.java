@@ -5,8 +5,8 @@ public class Main {
     
     Scanner scanner = new Scanner(System.in);
 
-    Contato[] contatos = new Contato[10];
     Agenda agenda = new Agenda();
+    Contato contato = null;
 
     int escolha = 0;
     boolean escolhaValida = false;
@@ -19,18 +19,29 @@ public class Main {
       escolha = scanner.nextInt();
 
       if (escolha == 2) {
-        // TODO:
-        escolhaValida = true; 
+        System.out.print("Insira o nome do contato: ");
+        String nome = scanner.next();
+        System.out.print("Insira o telefone do contato: ");
+        long telefone = scanner.nextLong();
 
-      } else if (escolha == 1 && contatos != null) {
+        contato = new Contato();
+        contato.setNome(nome);
+        contato.setTelefone(telefone);
+
+        agenda.adicionarContato(contato);
+        contato.setNome(nome);
+        contato.setTelefone(telefone);
+
+
+      } else if (escolha == 1) {
           // TODO:
-          escolhaValida = true;
 
         } else {
-
           System.out.println("Essa não é uma opção válida. Tente novamente!");
         }
-    } while (escolhaValida);
+    } while (!escolhaValida);
+
+    System.out.println(escolhaValida);
 
     scanner.close();
   }
