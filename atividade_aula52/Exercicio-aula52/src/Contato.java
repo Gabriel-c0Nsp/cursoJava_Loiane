@@ -33,7 +33,7 @@ public class Contato {
   public String toString() {
     return "Nome: " + nome + "\n" +
            "Telefone: " + telefone + "\n" + 
-           "Nº do contato na agenda: " + identificador;
+           "Nº do contato na agenda: " + identificador + 1;
   }
 
 }

@@ -10,6 +10,7 @@ public class Main {
 
     int escolha = 0;
     boolean escolhaValida = false;
+    int identificador;
 
     System.out.println("[AGENDA DE CONTATOS]");
     System.out.println();
@@ -34,7 +35,9 @@ public class Main {
 
 
       } else if (escolha == 1) {
-          // TODO:
+        System.out.println("Insira o identificador do contato");
+        identificador = scanner.nextInt();
+        System.out.println(agenda.consultarContato(identificador));
 
         } else {
           System.out.println("Essa não é uma opção válida. Tente novamente!");

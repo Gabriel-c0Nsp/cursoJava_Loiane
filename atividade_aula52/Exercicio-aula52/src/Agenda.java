@@ -4,7 +4,7 @@ public class Agenda {
   private Contato[] contatos;
 
   public Agenda() {
-    this.contatos = new Contato[3];
+    this.contatos = new Contato[10];
   }
 
   public Contato[] getContatos() {
@@ -27,14 +27,17 @@ public class Agenda {
     for (int i = 0; i < contatos.length; i++) {
       if (contatos[i] == null) {
         contatos[i] = contato;
+        contato.setIdentificador(i);  
         return;
       }
     }
     System.out.println("A agenda está cheia. Você atingiu o número máximo de contatos!");
   }
 
-  public void consultarContato() {
+  public Contato consultarContato(int identificador) {
       // TODO:
+      Contato contato = contatos[identificador - 1];
+      return contato;
     }
   
 }
