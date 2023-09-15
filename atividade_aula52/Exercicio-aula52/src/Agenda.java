@@ -28,6 +28,7 @@ public class Agenda {
       if (contatos[i] == null) {
         contatos[i] = contato;
         contato.setIdentificador(i);  
+        System.out.println("O Nº do contato inserido é: " + contato.getIdentificador() + 1);
         return;
       }
     }
@@ -35,9 +36,8 @@ public class Agenda {
   }
 
   public Contato consultarContato(int identificador) {
-      // TODO:
-      Contato contato = contatos[identificador - 1];
-      return contato;
-    }
+    Contato contato = contatos[identificador - 1];
+    return contato;
+  }
   
 }
